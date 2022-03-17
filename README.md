@@ -1,4 +1,5 @@
 # portfolio-site
+Self-built personal portfolio site built with Vue v2 and Vuetify.
 
 ## Project setup
 ```
