@@ -21,21 +21,22 @@
           </v-col>
           <v-col class="d-flex flex-column justify-center">
             <span class="blue-text greetings">Hello There!</span>
-            <p class="description">I'm 
+            <p class="description">I'm
               <span class="blue-text">Victor</span>, a 
               <span class="blue-text">Front-End Developer</span> that values user experience just as much as functionality in the applications I create.
               Come take a look at what I've done through my résumé or projects!
             </p>
             <v-btn
+              @click="openResume()"
               color="#91C4FF"
               elevation="2"
               rounded
-            >Résumé</v-btn>
+            >Résumé
+            </v-btn>
           </v-col>
           <v-spacer />
         </v-row>
       </v-container>
-      
     </v-layout>
   </div>
 </template>
@@ -48,6 +49,11 @@ export default {
   name: 'HomeView',
   components: {
     // HelloWorld
+  },
+  methods: {
+    openResume: function () {
+      window.open("resume.pdf", '_blank');
+    }
   }
 }
 </script>
