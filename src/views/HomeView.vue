@@ -1,15 +1,10 @@
 <template>
   <div class="home">
-    <v-layout
-      margin="0px"
-      align-center
-      justify-center
-      fill-height
-    >
+    <v-layout>
       <v-container>
         <v-row>
           <v-spacer />
-          <v-col class="d-flex flex-row justify-space-between" align="center" cols="3">
+          <v-col class="icon-col" cols="3">
             <img class="home-icon" src="../assets/feicon.svg">
             <v-avatar size="200">
               <img
@@ -19,7 +14,7 @@
               >
             </v-avatar>
           </v-col>
-          <v-col class="d-flex flex-column justify-center">
+          <v-col class="introduction-col">
             <span class="blue-text greetings">Hello There!</span>
             <p class="description">I'm
               <span class="blue-text">Victor</span>, a 
@@ -27,9 +22,8 @@
               Come take a look at what I've done through my résumé or projects!
             </p>
             <v-btn
+              class="resume-btn"
               @click="openResume()"
-              color="#91C4FF"
-              elevation="2"
               rounded
             >Résumé
             </v-btn>
@@ -59,6 +53,25 @@ export default {
 </script>
 
 <style scoped>
+.layout {
+  height: 100%;
+  margin: 0px;
+  justify-items: center;
+  align-items: center;
+}
+.icon-col {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; 
+}
+.introduction-col {
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.resume-btn {
+  background-color: #91C4FF !important;
+}
 .blue-text {
   color: #91C4FF;
 }
