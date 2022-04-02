@@ -1,7 +1,7 @@
 [
     {
         "id": "0",
-        "proj-title": "Collaborative Timetable App",
+        "proj-title": "Collaborative Timetable App | Jan-April 2021",
         "img": "timetable_app.png",
         "description": "Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. The passage is attributed to an unknown typesetter in the 15th century who is thought to have scrambled parts of Cicero's De Finibus Bonorum et Malorum for use in a type specimen book. It usually begins with:",
         "technologies": [
@@ -9,18 +9,26 @@
                 "icon": "mdi-react",
                 "icon-name": "React"
             }
-        ]
+        ],
+        "github": {
+            "visible": false,
+            "link": ""
+        }
     },
     {
         "id": "1",
-        "proj-title": "Collaborative Timetable App",
-        "img": "timetable_app.png",
+        "proj-title": "Sports Social Media App | Sept-Dec 2020",
+        "img": "sportcred.png",
         "description": "yes",
         "technologies": [
             {
                 "icon": "mdi-react",
                 "icon-name": "React"
             }
-        ]
+        ],
+        "github": {
+            "visible": true,
+            "link": "https://github.com/Victguo/project-the-code-manglers"
+        }
     }
 ]
