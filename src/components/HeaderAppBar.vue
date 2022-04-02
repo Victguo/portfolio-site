@@ -10,13 +10,15 @@
           <v-toolbar-items class="text-right">
             <v-btn
               :x-small="$vuetify.breakpoint.smAndDown"
-              @click="$vuetify.goTo('#about',options )"
+              @click="$vuetify.goTo('#home',options )"
               text
+              to="/"
             >Home</v-btn>
             <v-btn
               :x-small="$vuetify.breakpoint.smAndDown"
-              @click="$vuetify.goTo('#portfolio',options )"
+              @click="$vuetify.goTo('#projects',options )"
               text
+              to="/projects"
             >Projects</v-btn>
             <v-btn
               :x-small="$vuetify.breakpoint.smAndDown"
