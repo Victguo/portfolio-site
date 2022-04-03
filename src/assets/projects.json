@@ -3,7 +3,7 @@
         "id": "0",
         "proj-title": "Collaborative Timetable App | Jan-April 2021",
         "img": "timetable_app.png",
-        "description": "Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. The passage is attributed to an unknown typesetter in the 15th century who is thought to have scrambled parts of Cicero's De Finibus Bonorum et Malorum for use in a type specimen book. It usually begins with:",
+        "description": "",
         "technologies": [
             {
                 "icon": "mdi-react",
@@ -19,11 +19,15 @@
         "id": "1",
         "proj-title": "Sports Social Media App | Sept-Dec 2020",
         "img": "sportcred.png",
-        "description": "yes",
+        "description": "A mobile application quickly developed as a prototype for a startup. Built as a social media application for sports enthusiasts to discuss events in sports and show off their sports knowledge.",
         "technologies": [
             {
                 "icon": "mdi-react",
-                "icon-name": "React"
+                "icon-name": "React Native"
+            },
+            {
+                "icon": "mdi-firebase",
+                "icon-name": "Firebase"
             }
         ],
         "github": {

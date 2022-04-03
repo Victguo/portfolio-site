@@ -4,11 +4,11 @@
       <v-container>
         <v-row class="proj-row">
             <template v-for="project in projects">
-                <v-col class="proj-col" cols="6" v-bind:key="project.id">
-                    <h2>{{project['proj-title']}}</h2>
+                <v-col class="proj-col" lg="6" md="12" v-bind:key="project.id">
+                    <h2 class="proj-title">{{project['proj-title']}}</h2>
                     <img class="proj-img" alt="timetable-app" :src="image(project.img)">
                     <span>{{project.description}}</span>
-                    <span>Technologies Used:</span>
+                    <h3>Technologies Used:</h3>
                     <v-layout class="tech-layout">
                         <template v-for="(technology, i) in project.technologies">
                             <v-flex class="tech-list" xs3 v-bind:key="i">
@@ -22,7 +22,7 @@
                         </template>
                     </v-layout>
                     <template v-if="project.github.visible">
-                        <span>View on GitHub:</span>
+                        <h3>View on GitHub:</h3>
                         <v-btn icon>
                             <v-icon>mdi-github</v-icon>
                         </v-btn>
@@ -57,7 +57,7 @@ export default {
 
 <style scoped>
 .main-layout {
-    height: 100%;
+    min-height: 100vh;
     padding-top: 120px;
     justify-items: center;
     /* align-items: center; */
@@ -75,8 +75,8 @@ export default {
 .proj-row {
     max-height: 664px;
 }
-.tech-list {
-    max-width: 36px;
+.proj-title {
+    text-decoration: underline;
 }
 .blue-text {
   color: #91C4FF;
@@ -101,6 +101,6 @@ export default {
   /* margin-top: 120px; */
 }
 .tech-layout {
-    max-height: 56px;
+    max-width: 50%;
 }
 </style>

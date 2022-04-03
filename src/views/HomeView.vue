@@ -1,20 +1,12 @@
 <template>
   <div class="home">
-    <v-layout>
+    <v-layout class="main-layout">
       <v-container>
-        <v-row>
-          <v-spacer />
-          <v-col class="icon-col" cols="3">
+        <v-row class="home-row">
+          <v-col class="icon-col" md="2" cols="12">
             <img class="home-icon" src="../assets/feicon.svg">
-            <v-avatar size="200">
-              <img
-                class="headshot-image"
-                src="../assets/headshot.jpg"
-                alt="Headshot"
-              >
-            </v-avatar>
           </v-col>
-          <v-col class="introduction-col">
+          <v-col class="introduction-col" cols="8" md="4">
             <span class="blue-text greetings">Hello There!</span>
             <p class="description">I'm
               <span class="blue-text">Victor</span>, a 
@@ -28,7 +20,6 @@
             >Résumé
             </v-btn>
           </v-col>
-          <v-spacer />
         </v-row>
       </v-container>
     </v-layout>
@@ -53,16 +44,16 @@ export default {
 </script>
 
 <style scoped>
-.layout {
+.main-layout {
   height: 100%;
-  margin: 0px;
+  /* padding-top: 120px; */
   justify-items: center;
   align-items: center;
 }
 .icon-col {
   display: flex;
   flex-direction: row;
-  justify-content: space-between; 
+  justify-content: center; 
 }
 .introduction-col {
   display:flex;
@@ -71,6 +62,7 @@ export default {
 }
 .resume-btn {
   background-color: #91C4FF !important;
+  max-width: 200px;
 }
 .blue-text {
   color: #91C4FF;
@@ -92,5 +84,9 @@ export default {
 }
 .home {
   height: 100%;
+}
+.home-row {
+  justify-content: center;
+  align-items: center;
 }
 </style>
